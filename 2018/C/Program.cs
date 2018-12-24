@@ -53,5 +53,21 @@ namespace advent_of_code_2018
             int answer = new Day3().PartTwo(input);
             Assert.AreEqual(113, answer);
         }
+        
+                [Test]
+        public void TestDay4Part1()
+        {
+            string[] input = System.IO.File.ReadAllLines("../../../../inputs/day-4.txt");
+            int answer = new Day4().PartOne(input);
+            Assert.AreEqual(87681, answer);
+        }
+
+        [Test]
+        public void TestDay4Part2()
+        {
+            string[] input = System.IO.File.ReadAllLines("../../../../inputs/day-4.txt");
+            int answer = new Day4().PartTwo(input);
+            Assert.AreEqual(136461, answer);
+        }
     }
 }
